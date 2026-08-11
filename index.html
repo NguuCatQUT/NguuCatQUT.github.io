@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>QUT Vietnam JSC</title>
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="QUT VN" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+    <script>
+      (function () {
+        // Nếu người dùng đã chọn ngôn ngữ trước đó
+        const saved = localStorage.getItem("language");
+
+        if (saved) {
+          location.replace(`/${saved}/`);
+          return;
+        }
+
+        // Lấy ngôn ngữ trình duyệt
+        const lang = (
+          navigator.language || navigator.userLanguage
+        ).toLowerCase();
+
+        if (lang.startsWith("ja")) {
+          window.location.replace("/ja/");
+        } else if (lang.startsWith("vi")) {
+          window.location.replace("/vi/");
+        } else {
+          window.location.replace("/en/");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>

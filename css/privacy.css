@@ -1,0 +1,293 @@
+/* =========================================
+   PRIVACY PAGE
+========================================= */
+
+.privacy-page {
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 120px;
+  background: var(--white);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.privacy-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 50px 100px;
+  border-bottom: 1px solid var(--gray-mid);
+}
+
+.privacy-eyebrow {
+  margin-bottom: 30px;
+
+  font-size: 0.68rem;
+  font-weight: 400;
+
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: #777;
+}
+
+.privacy-header h1 {
+  max-width: 800px;
+
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 400;
+  line-height: 0.95;
+
+  letter-spacing: -0.02em;
+
+  color: var(--black);
+}
+
+.privacy-intro {
+  max-width: 650px;
+
+  margin-top: 45px;
+
+  font-size: 1rem;
+  line-height: 1.9;
+
+  color: var(--gray-dark);
+}
+
+.privacy-updated {
+  margin-top: 30px;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+
+  color: #888;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.privacy-content {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 0 50px;
+}
+
+.privacy-content section {
+  display: grid;
+
+  grid-template-columns: 80px 1fr;
+
+  gap: 40px;
+
+  padding: 75px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.section-number {
+  padding-top: 7px;
+
+  font-family: var(--serif);
+
+  font-size: 0.9rem;
+
+  color: #888;
+}
+
+.privacy-content h2 {
+  margin-bottom: 25px;
+
+  font-family: var(--serif);
+
+  font-size: 2rem;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+.privacy-content p {
+  max-width: 750px;
+
+  margin-bottom: 18px;
+
+  font-size: 0.9rem;
+
+  line-height: 1.9;
+
+  color: #555;
+}
+
+.privacy-content ul {
+  max-width: 750px;
+
+  margin: 25px 0;
+
+  padding-left: 20px;
+}
+
+.privacy-content li {
+  margin-bottom: 8px;
+
+  font-size: 0.9rem;
+
+  line-height: 1.8;
+
+  color: #555;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.privacy-contact {
+  border-bottom: none !important;
+}
+
+.contact-details {
+  margin-top: 35px;
+
+  padding: 30px;
+
+  max-width: 500px;
+
+  border: 1px solid var(--gray-mid);
+
+  background: #f4f4f2;
+}
+
+.contact-details strong {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-family: var(--serif);
+
+  font-size: 1.2rem;
+
+  font-weight: 400;
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+}
+
+.contact-details a {
+  color: var(--black);
+
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--black);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.privacy-footer {
+  padding: 35px 50px;
+
+  border-top: 1px solid var(--gray-mid);
+
+  text-align: center;
+}
+
+.privacy-footer p {
+  margin: 0;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.15em;
+
+  color: #777;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .privacy-page {
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+
+
+  .privacy-header {
+    padding: 0 25px 65px;
+  }
+
+  .privacy-eyebrow {
+    margin-bottom: 20px;
+
+    font-size: 0.6rem;
+  }
+
+  .privacy-header h1 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+
+    line-height: 1;
+  }
+
+  .privacy-intro {
+    margin-top: 30px;
+
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+  }
+
+
+  .privacy-content {
+    padding: 0 25px;
+  }
+
+  .privacy-content section {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    padding: 55px 0;
+  }
+
+  .section-number {
+    padding: 0;
+
+    font-size: 0.75rem;
+  }
+
+  .privacy-content h2 {
+    font-size: 1.7rem;
+
+    margin-bottom: 20px;
+  }
+
+  .privacy-content p,
+  .privacy-content li {
+    font-size: 0.85rem;
+
+    line-height: 1.85;
+  }
+
+
+  .contact-details {
+    padding: 22px;
+  }
+
+
+  .privacy-footer {
+    padding: 30px 20px;
+  }
+
+}
