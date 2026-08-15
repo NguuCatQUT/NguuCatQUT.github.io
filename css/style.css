@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: "Frys Baskerville";
+  src: url("/assets/fonts/Frys-Baskerville-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --black: #0a0a0a;
@@ -6,10 +13,11 @@
   --gray-light: #f0f0ee;
   --gray-mid: #c8c8c4;
   --gray-dark: #3a3a38;
-  --serif: "IM Fell English", "Georgia", serif;
-  --serif-sc: "IM Fell English SC", "Georgia", serif;
+
+  --serif: "Frys Baskerville", Georgia, serif;
+  --serif-sc: "Frys Baskerville", Georgia, serif;
   --serif-vi: "Cormorant Garamond", serif;
-  --sans: "Noto Sans JP", sans-serif;
+  --sans: "Frys Baskerville", Georgia, serif;
 }
 
 html[lang="vi"] .hero-title,
@@ -19,11 +27,22 @@ html[lang="vi"] h3,
 html[lang="vi"] strong,
 html[lang="vi"] .card-title,
 html[lang="vi"] .plan-card-title,
-html[lang="vi"] .contact-tagline {
+html[lang="vi"] .contact-tagline 
+{
 
   font-family: var(--serif-vi);
 
 }
+
+html[lang="vi"] p, 
+html[lang="vi"] div,
+html[lang="vi"] table,
+html[lang="vi"] footer {
+
+  font-family: "Noto Sans JP";
+  font-weight: 300;
+}
+
 
 *,
 *::before,
@@ -199,10 +218,10 @@ html {
 body {
   background: var(--white);
   color: var(--black);
-  font-family: var(--sans);
-  font-weight: 300;
   line-height: 1.7;
   overflow-x: hidden;
+  font-family: var(--sans);
+  font-weight: 400;
 }
 
 nav {
@@ -1015,8 +1034,8 @@ footer a:hover {
 
 .profile-table th {
   width: 200px;
-  font-family: var(--serif);
-  font-weight: 400;
+  font-family: var(--serif-vi);
+  font-weight: 500;
   font-size: 0.95rem;
   color: var(--black);
   padding-right: 3rem;
