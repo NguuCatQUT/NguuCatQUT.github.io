@@ -13,11 +13,12 @@
 ========================================= */
 
 .section-index {
-  font-size: 0.65rem;
+  font-size: 1.65rem;
+  grid-column: span 2;
 /*  letter-spacing: 0.22em;
   color: #777; */
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   color: #3f3f3f;
   font-weight: 500;
   letter-spacing: 0.22em;
@@ -106,7 +107,7 @@
 .career-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8rem;
+  gap: 1rem;
 
   padding: 9rem 5rem;
 
@@ -126,7 +127,7 @@
 
 .career-intro-text {
   max-width: 560px;
-  padding-top: 3rem;
+
 }
 
 .career-intro-text p {
@@ -218,7 +219,6 @@
   max-width: 380px;
   color: #666;
   line-height: 1.9;
-  padding-top: 3rem;
 }
 
 

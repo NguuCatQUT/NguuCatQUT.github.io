@@ -1,527 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <title>採用情報 | QUT Vietnam JSC</title>
 
-  <title>採用情報 | QUT Vietnam JSC</title>
+    <meta
+      name="description"
+      content="QUT Vietnam JSCの採用情報。日本、ベトナム、そして世界をつなぐ環境で、国際的なキャリアを築きませんか。"
+    />
 
-  <meta
-    name="description"
-    content="QUT Vietnam JSCの採用情報。日本、ベトナム、そして世界をつなぐ環境で、国際的なキャリアを築きませんか。"
-  >
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
 
-  <!-- Favicon -->
-  <link
-    rel="icon"
-    type="image/png"
-    href="/assets/favicon/favicon-96x96.png"
-    sizes="96x96"
-  />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
 
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="/assets/favicon/favicon.svg"
-  />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
 
-  <link
-    rel="shortcut icon"
-    href="/assets/favicon/favicon.ico"
-  />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
 
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="/assets/favicon/apple-touch-icon.png"
-  />
+    <meta name="apple-mobile-web-app-title" content="QUT VN" />
 
-  <meta
-    name="apple-mobile-web-app-title"
-    content="QUT VN"
-  />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
-  <link
-    rel="manifest"
-    href="/assets/favicon/site.webmanifest"
-  />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Noto+Sans+JP:wght@300;400;500&display=swap"
-    rel="stylesheet"
-  />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/recruitment.css" />
+  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/recruitment.css">
+  <body>
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <h3 id="cookieTitle">プライバシーについて</h3>
 
-</head>
+          <p id="cookieMessage">
+            当サイトでは、サービス向上およびアクセス解析のためCookieを使用しています。
+          </p>
+        </div>
 
+        <div class="cookie-buttons">
+          <button id="cookieReject" class="cookie-btn secondary">
+            拒否する
+          </button>
 
-<body>
-
-  <!-- Cookie Banner -->
-  <div id="cookieBanner" class="cookie-banner">
-
-    <div class="cookie-content">
-
-      <div class="cookie-text">
-
-        <h3 id="cookieTitle">
-          プライバシーについて
-        </h3>
-
-        <p id="cookieMessage">
-          当サイトでは、サービス向上およびアクセス解析のためCookieを使用しています。
-        </p>
-
+          <button id="cookieAccept" class="cookie-btn primary">同意する</button>
+        </div>
       </div>
 
-      <div class="cookie-buttons">
-
-        <button
-          id="cookieReject"
-          class="cookie-btn secondary"
-        >
-          拒否する
-        </button>
-
-        <button
-          id="cookieAccept"
-          class="cookie-btn primary"
-        >
-          同意する
-        </button>
-
+      <div class="cookie-footer">
+        <a id="cookiePrivacy" href="/ja/privacy.html"> プライバシーポリシー </a>
       </div>
-
     </div>
 
-    <div class="cookie-footer">
+    <!-- Shared Navigation -->
+    <div id="navbar"></div>
 
-      <a
-        id="cookiePrivacy"
-        href="/ja/privacy.html"
-      >
-        プライバシーポリシー
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <!-- Shared Navigation -->
-  <div id="navbar"></div>
-
-
-  <main class="recruitment-page">
-
-
-    <!-- =========================================
+    <main class="recruitment-page">
+      <!-- =========================================
          HERO
     ========================================== -->
 
-    <section class="career-hero">
+      <section class="career-hero">
+        <div class="career-hero-inner">
+          <p class="section-index">01 — 採用情報</p>
 
-      <div class="career-hero-inner">
+          <div class="career-hero-content">
+            <div>
+              <p class="career-eyebrow">QUT VIETNAM JSC</p>
 
-        <p class="section-index">
-          01 — 採用情報
-        </p>
+              <h1 class="career-title">
+                国境を越えて
+                <br />
+                <em>未来をつくる</em>
+              </h1>
+            </div>
 
-        <div class="career-hero-content">
+            <div class="career-hero-description">
+              <p>
+                日本、ベトナム、さらなる世界をつなぎ、地域に根ざした知識とグローバルな機会を通じて、新しい価値を生み出すチームに参加しませんか
+              </p>
 
-          <div>
-
-            <p class="career-eyebrow">
-              QUT VIETNAM JSC
-            </p>
-
-            <h1 class="career-title">
-              国境を越えて
-              <br>
-              <em>未来をつくる</em>
-            </h1>
-
+              <a href="#openings" class="career-link">
+                募集中のポジションを見る
+                <span>↓</span>
+              </a>
+            </div>
           </div>
-
-
-          <div class="career-hero-description">
-
-            <p>
-              日本、ベトナム、さらなる世界をつなぎ、地域に根ざした知識とグローバルな機会を通じて、新しい価値を生み出すチームに参加しませんか
-            </p>
-
-            <a
-              href="#openings"
-              class="career-link"
-            >
-              募集中のポジションを見る
-              <span>↓</span>
-            </a>
-
-          </div>
-
         </div>
+      </section>
 
-      </div>
-
-    </section>
-
-
-    <!-- =========================================
+      <!-- =========================================
          WHY QUT
     ========================================== -->
 
-    <section class="career-intro">
+      <section class="career-intro">
+        <p class="section-index">02 — QUTで働く理由</p>
 
-      <div class="section-heading">
+        <div class="section-heading">
+          <h2>
+            地域に根ざし
+            <br />
+            <em>世界へ広がる</em>
+          </h2>
+        </div>
 
-        <p class="section-index">
-          02 — QUTで働く理由
-        </p>
+        <div class="career-intro-text">
+          <p>
+            QUTでは、意義のある国際ビジネスを念頭にまず地域文化・商習慣を通して市場を深く理解することから始めると考えています
+          </p>
 
-        <h2>
-          地域に根ざし
-          <br>
-          <em>世界へ広がる</em>
-        </h2>
+          <p>
+            私たちは日本とベトナムを中心に、異なる文化、経験、価値観を持つメンバーが協力し、新しいビジネスの可能性を生み出しています
+          </p>
+        </div>
+      </section>
 
-      </div>
-
-
-      <div class="career-intro-text">
-
-        <p>
-          QUTでは、意義のある国際ビジネスを念頭にまず地域文化・商習慣を通して市場を深く理解することから始めると考えています
-        </p>
-
-        <p>
-          私たちは日本とベトナムを中心に、異なる文化、経験、価値観を持つメンバーが協力し、新しいビジネスの可能性を生み出しています
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================================
+      <!-- =========================================
          VALUES
     ========================================== -->
 
-    <section class="career-values">
+      <section class="career-values">
+        <div class="value-item">
+          <span class="value-number"> 01 </span>
 
-      <div class="value-item">
+          <h3>International</h3>
 
-        <span class="value-number">
-          01
-        </span>
+          <p>
+            異なる文化や市場、国境を越えて仕事をしながら、グローバルな視点と経験を身につけることができます
+          </p>
+        </div>
 
-        <h3>
-          International
-        </h3>
+        <div class="value-item">
+          <span class="value-number"> 02 </span>
 
-        <p>
-          異なる文化や市場、国境を越えて仕事をしながら、グローバルな視点と経験を身につけることができます
-        </p>
+          <h3>Local ownership</h3>
 
-      </div>
+          <p>
+            現地を深く理解する人々がその地域のビジネスを動かすことが重要だと考えています
+          </p>
+        </div>
 
+        <div class="value-item">
+          <span class="value-number"> 03 </span>
 
-      <div class="value-item">
+          <h3>Cross-disciplinary</h3>
 
-        <span class="value-number">
-          02
-        </span>
+          <p>
+            オペレーション、人材、ホテル、F&Bなど、国や業態を横断した幅広い事業領域で新しい可能性に挑戦できます
+            <br />
+            例：Memoleadグループへの転職
+          </p>
+        </div>
+      </section>
 
-        <h3>
-          Local ownership
-        </h3>
-
-        <p>
-          現地を深く理解する人々がその地域のビジネスを動かすことが重要だと考えています
-        </p>
-
-      </div>
-
-
-      <div class="value-item">
-
-        <span class="value-number">
-          03
-        </span>
-
-        <h3>
-          Cross-disciplinary
-        </h3>
-
-        <p>
-          オペレーション、人材、ホテル、F&Bなど、国や業態を横断した幅広い事業領域で新しい可能性に挑戦できます 
-          <br> 例：Memoleadグループへの転職
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================================
+      <!-- =========================================
          OPEN POSITIONS
     ========================================== -->
 
-    <section
-      id="openings"
-      class="career-openings"
-    >
+      <section id="openings" class="career-openings">
+        <p class="section-index">03 — 募集中のポジション</p>
+        <div class="openings-header">
+          <div>
+            <h2>
+              次の
+              <em>挑戦を見つける</em>
+            </h2>
+          </div>
 
-      <div class="openings-header">
-
-        <div>
-
-          <p class="section-index">
-            03 — 募集中のポジション
+          <p class="openings-description">
+            QUTの各事業部門とともに成長できる新しいキャリアの機会をご紹介します
           </p>
-
-          <h2>
-            次の
-            <em>挑戦を見つける</em>
-          </h2>
-
         </div>
 
-        <p class="openings-description">
-          QUTの各事業部門とともに成長できる新しいキャリアの機会をご紹介します
-        </p>
+        <div class="job-list">
+          <!-- JOB 01 -->
 
-      </div>
+          <a href="#" class="job-card">
+            <div class="job-number">00</div>
 
+            <div class="job-info">
+              <h3>General Director: Mr.Binh</h3>
 
-      <div class="job-list">
-
-        <!-- JOB 01 -->
-
-        <a
-          href="#"
-          class="job-card"
-        >
-
-          <div class="job-number">
-            00
-          </div>
-
-          <div class="job-info">
-
-            <h3>
-              General Director: Mr.Binh
-            </h3>
-
-            <div class="job-meta">
-              <span>部署:</span>
-              <span>Board of Member</span>
-              <span>日本 福岡市</span>
+              <div class="job-meta">
+                <span>部署:</span>
+                <span>Board of Member</span>
+                <span>日本 福岡市</span>
+              </div>
             </div>
 
-          </div>
+            <div class="job-arrow">→</div>
+          </a>
 
-          <div class="job-arrow">
-            →
-          </div>
+          <!-- JOB 01 -->
 
-        </a>
+          <a href="#" class="job-card">
+            <div class="job-number">01</div>
 
-        <!-- JOB 01 -->
+            <div class="job-info">
+              <h3>Store Manager: Minh</h3>
 
-        <a
-          href="#"
-          class="job-card"
-        >
-
-          <div class="job-number">
-            01
-          </div>
-
-          <div class="job-info">
-
-            <h3>
-              Store Manager: Minh 
-            </h3>
-
-            <div class="job-meta">
-              <span>部署:</span>
-              <span>Operation Division</span>
-              <span>ベトナム ホーチミン市　</span>
+              <div class="job-meta">
+                <span>部署:</span>
+                <span>Operation Division</span>
+                <span>ベトナム ホーチミン市　</span>
+              </div>
             </div>
 
-          </div>
+            <div class="job-arrow">→</div>
+          </a>
 
-          <div class="job-arrow">
-            →
-          </div>
+          <!-- JOB 02 -->
 
-        </a>
+          <a href="#" class="job-card">
+            <div class="job-number">02</div>
 
+            <div class="job-info">
+              <h3>Operation Deputy Director: Vi</h3>
 
-        <!-- JOB 02 -->
-
-        <a
-          href="#"
-          class="job-card"
-        >
-
-          <div class="job-number">
-            02
-          </div>
-
-          <div class="job-info">
-
-            <h3>
-              Operation Deputy Director: Vi
-            </h3>
-
-            <div class="job-meta">
-              <span>部署:</span>
-              <span>Solution Division</span>
-              <span>ベトナム ダナン市</span>
+              <div class="job-meta">
+                <span>部署:</span>
+                <span>Solution Division</span>
+                <span>ベトナム ダナン市</span>
+              </div>
             </div>
 
-          </div>
+            <div class="job-arrow">→</div>
+          </a>
 
-          <div class="job-arrow">
-            →
-          </div>
+          <!-- JOB 03 -->
 
-        </a>
+          <a href="#" class="job-card">
+            <div class="job-number">03</div>
 
+            <div class="job-info">
+              <h3>Administrative Leader: Matta</h3>
 
-        <!-- JOB 03 -->
-
-        <a
-          href="#"
-          class="job-card"
-        >
-
-          <div class="job-number">
-            03
-          </div>
-
-          <div class="job-info">
-
-            <h3>
-              Administrative Leader: Matta
-            </h3>
-
-            <div class="job-meta">
-              <span>部署:</span>
-              <span>Headquarters</span>
-              <span>ベトナム ホーチミン市</span>
+              <div class="job-meta">
+                <span>部署:</span>
+                <span>Headquarters</span>
+                <span>ベトナム ホーチミン市</span>
+              </div>
             </div>
 
-          </div>
+            <div class="job-arrow">→</div>
+          </a>
+        </div>
+      </section>
 
-          <div class="job-arrow">
-            →
-          </div>
-
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================================
+      <!-- =========================================
          HOW WE WORK
     ========================================== -->
 
-    <section class="career-philosophy">
+      <section class="career-philosophy">
+        
+        <p class="section-index">04 — 私たちの働き方</p>
 
-      <p class="section-index">
-        04 — 私たちの働き方
-      </p>
+        <h2>
+          人を第一に
+          <br />
+          <em>市場はその先に</em>
+        </h2>
 
-      <h2>
-        人を第一に
-        <br>
-        <em>市場はその先に</em>
-      </h2>
+        <p class="philosophy-text">
+          異なる文化に好奇心を持ち認め合い自ら責任を持って行動し仲間と共に新しいものを創造する私たちは、そんな人と働きたいと考えています
+        </p>
+      </section>
 
-      <p class="philosophy-text">
-        異なる文化に好奇心を持ち認め合い自ら責任を持って行動し仲間と共に新しいものを創造する私たちは、そんな人と働きたいと考えています
-      </p>
-
-    </section>
-
-
-    <!-- =========================================
+      <!-- =========================================
          CONTACT CTA
     ========================================== -->
 
-    <section class="career-contact">
+      <section class="career-contact">
 
-      <p class="section-index">
-        05 — お問い合わせ
-      </p>
+        <p class="section-index">05 — お問い合わせ</p>
+        
+        <h2>
+          自分に合う
+          <br />
+          <em>ポジションは見つかりましたか？</em>
+        </h2>
 
-      <h2>
-        自分に合う
-        <br>
-        <em>ポジションは見つかりましたか？</em>
-      </h2>
+        <p>
+          私たちのビジョンに共感していただける方との出会いをいつでも歓迎しています
+        </p>
 
-      <p>
-        私たちのビジョンに共感していただける方との出会いをいつでも歓迎しています
-      </p>
+        <a href="/ja/index.html#contact" class="career-contact-button">
+          お問い合わせ
+          <span>→</span>
+        </a>
+      </section>
 
-      <a
-        href="/ja/index.html#contact"
-        class="career-contact-button"
-      >
-        お問い合わせ
-        <span>→</span>
-      </a>
+      <footer>
+        <span>© 2025 QUT Vietnam JSC. All rights reserved.</span>
+        <span
+          >120bis Nguyen Dinh Chieu, District 1, Ho Chi Minh City, Vietnam</span
+        >
+        <a href="index.html">トップへ戻る</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+      </footer>
+    </main>
 
-    </section>
-    
-  <footer>
-    <span>© 2025 QUT Vietnam JSC. All rights reserved.</span>
-    <span>120bis Nguyen Dinh Chieu, District 1, Ho Chi Minh City, Vietnam</span>
-    <a href="index.html">トップへ戻る</a>
-    <a href="privacy.html">プライバシーポリシー</a>
-  </footer>
+    <!-- Navigation -->
+    <script>
+      fetch("/components/nav-ja.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
 
+          if (typeof initMenu === "function") {
+            initMenu();
+          }
+        });
+    </script>
 
-  </main>
-
-
-  <!-- Navigation -->
-  <script>
-
-    fetch("/components/nav-ja.html")
-      .then((res) => res.text())
-      .then((data) => {
-
-        document.getElementById("navbar").innerHTML = data;
-
-        if (typeof initMenu === "function") {
-          initMenu();
-        }
-
-      });
-
-  </script>
-
-
-  <!-- Scripts -->
-  <script src="/js/script.js"></script>
-  <script src="/js/cookie.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="/js/script.js"></script>
+    <script src="/js/cookie.js"></script>
+  </body>
 </html>
