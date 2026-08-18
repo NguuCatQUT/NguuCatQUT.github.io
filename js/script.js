@@ -23,24 +23,30 @@ function initMenu() {
 }
 
 function switchLanguage(language) {
+  localStorage.setItem("language", language);
 
-    // Lưu ngôn ngữ người dùng chọn
-    localStorage.setItem("language", language);
+  let path = window.location.pathname;
 
-    // Lấy đường dẫn hiện tại
-    const path = window.location.pathname;
+  // Loại bỏ slash đầu và cuối
+  path = path.replace(/^\/+|\/+$/g, "");
 
-    // Lấy tên file hiện tại
-    let currentPage = path.split("/").pop();
+  const parts = path.split("/");
 
-    // Nếu đang ở dạng /en/ hoặc /en
-    // thì xem là index.html
-    if (!currentPage || currentPage === "") {
-        currentPage = "index.html";
-    }
+  // Bỏ language hiện tại
+  if (["en", "ja", "vi"].includes(parts[0])) {
+    parts.shift();
+  }
 
-    // Chuyển sang thư mục ngôn ngữ mới
-    window.location.href = `/${language}/${currentPage}`;
+  // Nếu đang ở trang root của language
+  if (parts.length === 0 || parts[0] === "index.html") {
+    window.location.href = `/${language}/`;
+    return;
+  }
+
+  // Giữ nguyên toàn bộ đường dẫn còn lại
+  const currentPath = parts.join("/");
+
+  window.location.href = `/${language}/${currentPath}`;
 }
 
 //                              Email                     //
