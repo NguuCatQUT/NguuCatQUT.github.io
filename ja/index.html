@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="ja">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QUT Vietnam JSC</title>
-  <meta name="description" content="QUT Vietnam JSCは、日本企業のベトナム進出・海外展開を、業務アウトソーシング、人材紹介通じて支援します。" />
-  <meta name="keywords" content="
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUT Vietnam JSC</title>
+    <meta
+      name="description"
+      content="QUT Vietnam JSCは、日本企業のベトナム進出・海外展開を、業務アウトソーシング、人材紹介通じて支援します。"
+    />
+    <meta
+      name="keywords"
+      content="
 QUT Vietnam,
 ベトナム進出,
 海外展開,
@@ -14,399 +18,460 @@ QUT Vietnam,
 人材紹介,
 マーケティング,
 ベトナム,
-日本企業" />
-  <meta property="og:type" content="website" />
+日本企業"
+    />
+    <meta property="og:type" content="website" />
 
-  <meta property="og:title" content="QUT Vietnam JSC | ベトナム進出・海外展開支援" />
+    <meta
+      property="og:title"
+      content="QUT Vietnam JSC | ベトナム進出・海外展開支援"
+    />
 
-  <meta property="og:description" content="業務アウトソーシング、人材紹介、通じて日本企業の海外展開を支援します。" />
+    <meta
+      property="og:description"
+      content="業務アウトソーシング、人材紹介、通じて日本企業の海外展開を支援します。"
+    />
 
-  <meta property="og:url" content="https://qut.vn/ja/" />
+    <meta property="og:url" content="https://qut.vn/ja/" />
 
-  <meta property="og:image" content="https://qut.vn/assets/images/og-image.jpg" />
-  <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="QUT VN" />
-  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Noto+Sans+JP:wght@300;400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
-  
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    emailjs.init({
-      publicKey: "Zk9RJZzGUq6lXGHM4",
-    });
-  </script>
-</head>
+    <meta
+      property="og:image"
+      content="https://qut.vn/assets/images/og-image.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="QUT VN" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
 
-<body>
-  <div id="navbar"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init({
+        publicKey: "Zk9RJZzGUq6lXGHM4",
+      });
+    </script>
+  </head>
 
-  <div id="cookieBanner" class="cookie-banner">
+  <body>
+    <div id="navbar"></div>
 
-    <div class="cookie-content">
-
+    <div id="cookieBanner" class="cookie-banner">
+      <div class="cookie-content">
         <div class="cookie-text">
+          <h3 id="cookieTitle">We value your privacy</h3>
 
-            <h3 id="cookieTitle">
-                We value your privacy
-            </h3>
-
-            <p id="cookieMessage">
-                We use cookies to improve your browsing experience,
-                analyze website traffic and enhance our services.
-                By clicking "Accept", you consent to our use of cookies.
-            </p>
-
+          <p id="cookieMessage">
+            We use cookies to improve your browsing experience, analyze website
+            traffic and enhance our services. By clicking "Accept", you consent
+            to our use of cookies.
+          </p>
         </div>
 
         <div class="cookie-buttons">
+          <button id="cookieReject" class="cookie-btn secondary">Reject</button>
 
-            <button id="cookieReject"
-                    class="cookie-btn secondary">
-                Reject
-            </button>
-
-            <button id="cookieAccept"
-                    class="cookie-btn primary">
-                Accept
-            </button>
-
+          <button id="cookieAccept" class="cookie-btn primary">Accept</button>
         </div>
+      </div>
 
+      <div class="cookie-footer">
+        <a id="cookiePrivacy" href="privacy.html"> Privacy Policy </a>
+      </div>
     </div>
 
-    <div class="cookie-footer">
-
-        <a id="cookiePrivacy" href="privacy.html">
-            Privacy Policy
-        </a>
-
-    </div>
-
-</div>
-
-  <div class="hero" id="home">
-    <div class="hero-left">
-      <p class="hero-eyebrow">
-        Quantum Universal Traverse — ホーチミン, ベトナム
-      </p>
-      <h1 class="hero-title">各地域の<br />ローカルから<em>世界へ</em></h1>
-      <p class="hero-sub">
-        QUT Vietnam JSCは、日本企業のベトナム進出とベトナム企業の海外展開を独自のチャネルを用いて双方向で力強くサポートします
-      </p>
-      <a href="#services" class="hero-cta">事業内容を見る &nbsp;→</a>
-    </div>
-    <div class="hero-right">
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">44</div>
-          <div class="stat-label">従業員数</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">
-            25<span style="font-size: 1.2rem">年</span>
+    <div class="hero" id="home">
+      <div class="hero-left">
+        <p class="hero-eyebrow">
+          Quantum Universal Traverse — ホーチミン, ベトナム
+        </p>
+        <h1 class="hero-title">各地域の<br />ローカルから<em>世界へ</em></h1>
+        <p class="hero-sub">
+          QUT Vietnam
+          JSCは、日本企業のベトナム進出とベトナム企業の海外展開を独自のチャネルを用いて双方向で力強くサポートします
+        </p>
+        <a href="#services" class="hero-cta">事業内容を見る &nbsp;→</a>
+      </div>
+      <div class="hero-right">
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">44</div>
+            <div class="stat-label">従業員数</div>
           </div>
-          <div class="stat-label">業界経験</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">3</div>
-          <div class="stat-label">対応言語</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">2024</div>
-          <div class="stat-label">設立年</div>
+          <div class="stat-item">
+            <div class="stat-number">
+              25<span style="font-size: 1.2rem">年</span>
+            </div>
+            <div class="stat-label">業界経験</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">対応言語</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2024</div>
+            <div class="stat-label">設立年</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <section id="philosophy" class="dark-section">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <h2 class="section-title">企業理念</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="philosophy-grid">
-      <div class="philosophy-card">
-        <div class="philosophy-card-label">Mission — ミッション</div>
-        <h3 class="philosophy-card-title">日本企業と<br />世界をつなぐ</h3>
-        <p class="philosophy-card-text">
-          日本企業の海外進出を支援し、日本企業の知識と経験を世界の市場へ展開。その展開に伴う雇用創出などによる経済的安定を通じて世界平和の実現を目指します
-        </p>
+    <section id="philosophy" class="dark-section">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">企業理念</h2>
+        <div class="section-line"></div>
       </div>
-      <div class="philosophy-card">
-        <div class="philosophy-card-label">Philosophy — 哲学</div>
-        <h3 class="philosophy-card-title">
-          ローカル企業による<br />地域のための経営
-        </h3>
-        <p class="philosophy-card-text">
-          外資系企業による統治型経営ではなく、ローカル企業による運用支援というローカル型運営を推進。経営層管理職を含むローカル雇用・現地雇用消費モデルで地域コミュニティに長期的な価値をもたらします
-        </p>
-      </div>
-      <div class="philosophy-card">
-        <div class="philosophy-card-label">Value — 価値</div>
-        <h3 class="philosophy-card-title">
-          ユニークなフォーメーションと独自チャネルで迅速・確実な海外展開
-        </h3>
-        <p class="philosophy-card-text">
-          独自のローカルとのネットワークを活用し、海外市場へスピーディかつ安定的に進出できる仕組みを提供します
-        </p>
-      </div>
-      <div class="philosophy-card">
-        <div class="philosophy-card-label">Motto — モットー</div>
-        <h3 class="philosophy-card-title">「Management of the local people, by the local people, for the local people」</h3>
-        <p class="philosophy-card-text">
-          この3L精神で各国地域企業と共に発展していくことが事業活動の根幹です
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="history">
-    <div class="section-header">
-      <span class="section-num">03</span>
-      <h2 class="section-title">会社沿革</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">2023</div>
-        <div class="timeline-content">
-          <p>ベトナムでの現地調査・事業視察を実施（Memolead社）</p>
+      <div class="philosophy-grid">
+        <div class="philosophy-card">
+          <div class="philosophy-card-label">Mission — ミッション</div>
+          <h3 class="philosophy-card-title">日本企業と<br />世界をつなぐ</h3>
+          <p class="philosophy-card-text">
+            日本企業の海外進出を支援し、日本企業の知識と経験を世界の市場へ展開。その展開に伴う雇用創出などによる経済的安定を通じて世界平和の実現を目指します
+          </p>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2024.04</div>
-        <div class="timeline-content">
-          <p>QUT株式会社 (QJP)を東京・渋谷にて吉田と加藤により設立</p>
+        <div class="philosophy-card">
+          <div class="philosophy-card-label">Philosophy — 哲学</div>
+          <h3 class="philosophy-card-title">
+            ローカル企業による<br />地域のための経営
+          </h3>
+          <p class="philosophy-card-text">
+            外資系企業による統治型経営ではなく、ローカル企業による運用支援というローカル型運営を推進。経営層管理職を含むローカル雇用・現地雇用消費モデルで地域コミュニティに長期的な価値をもたらします
+          </p>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2024.07</div>
-        <div class="timeline-content">
-          <p>ホーチミン市にてQUT Vietnam JSC (QVN)を設立。</p>
+        <div class="philosophy-card">
+          <div class="philosophy-card-label">Value — 価値</div>
+          <h3 class="philosophy-card-title">
+            ユニークなフォーメーションと独自チャネルで迅速・確実な海外展開
+          </h3>
+          <p class="philosophy-card-text">
+            独自のローカルとのネットワークを活用し、海外市場へスピーディかつ安定的に進出できる仕組みを提供します
+          </p>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2024.10</div>
-        <div class="timeline-content">
-          <p>ホーチミン市にてMemolead Vietnam JSC (MVN)の設立の支援</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2024.12</div>
-        <div class="timeline-content">
-          <p>Nguyen Anh BinhがQVNに参画</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2025.04</div>
-        <div class="timeline-content">
-          <p>
-            <a href="https://www.memolead.co.jp/" target="_blank" rel="noopener noreferrer">Memolead Group</a>, 
-            <a href="https://ushiyoshibiyori.com/" target="_blank" rel="noopener noreferrer">Dejima Terrace Dinings Co., Ltd. (DTD)</a>
-            の日本式焼肉レストランをベトナム へ展開
-           「<a href="http://nguucat.vn/" target="_blank" rel="noopener noreferrer">U444 The BBQ House（現Ushiyoshi Nguu Cat）</a>」
-           １号店をMVNと共に１区に開業
+        <div class="philosophy-card">
+          <div class="philosophy-card-label">Motto — モットー</div>
+          <h3 class="philosophy-card-title">
+            「Management of the local people, by the local people, for the local
+            people」
+          </h3>
+          <p class="philosophy-card-text">
+            この3L精神で各国地域企業と共に発展していくことが事業活動の根幹です
           </p>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2025.05</div>
-        <div class="timeline-content">
-          <p>
-            QUT合同会社が日本国内にて有料職業紹介事業の許可申請を提出（申請中）。
+    </section>
+
+    <section id="history">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">会社沿革</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <p>ベトナムでの現地調査・事業視察を実施（Memolead社）</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024.04</div>
+          <div class="timeline-content">
+            <p>QUT株式会社 (QJP)を東京・渋谷にて吉田と加藤により設立</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024.07</div>
+          <div class="timeline-content">
+            <p>ホーチミン市にてQUT Vietnam JSC (QVN)を設立。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024.10</div>
+          <div class="timeline-content">
+            <p>ホーチミン市にてMemolead Vietnam JSC (MVN)の設立の支援</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024.12</div>
+          <div class="timeline-content">
+            <p>Nguyen Anh BinhがQVNに参画</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025.04</div>
+          <div class="timeline-content">
+            <p>
+              <a
+                href="https://www.memolead.co.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Memolead Group</a
+              >,
+              <a
+                href="https://ushiyoshibiyori.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Dejima Terrace Dinings Co., Ltd. (DTD)</a
+              >
+              の日本式焼肉レストランをベトナム へ展開 「<a
+                href="http://nguucat.vn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >U444 The BBQ House（現Ushiyoshi Nguu Cat）</a
+              >」 １号店をMVNと共に１区に開業
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025.05</div>
+          <div class="timeline-content">
+            <p>
+              人材紹介事業を
+              <a
+                href="https://www.qut.vn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >QUT株式会社（QJP）</a
+              >
+              と共に開始
+            </p>
+
+            <img src="/assets/images/qvn.jpg" alt="QVN employees" />
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2026.03</div>
+
+          <div class="timeline-content">
+            <p>
+              <a
+                href="https://maps.app.goo.gl/YVmKcs7kEAj1UZHW7"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ushiyoshi NguuCat</a
+              >
+              に名称変更
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2026.05</div>
+
+          <div class="timeline-content">
+            <p>QJPが日本国内における有料職業紹介事業の 許可申請を提出</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2026.09</div>
+
+          <div class="timeline-content">
+            <p>
+              ホーチミン市5区に
+              <a
+                href="https://maps.app.goo.gl/P7veEphNTvwcqoLX9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ushiyoshi Nguu Cat 2号店</a
+              >
+              を開業
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026.09</div>
+          <div class="timeline-content">
+            <p>
+              ホーチミン市１区の<a
+                href="https://ilcorda.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Il Corda</a
+              >が参画
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2026.12</div>
+          <div class="timeline-content">
+            <p>Ushiyoshi Nguu Cat 3号店 ホーチミン市に開業予定</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="gray-section">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">事業内容</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">I</div>
+          <div class="service-name">
+            オペレーション事業<br /><span class="service-name-en"
+              >Operation Division</span
+            >
+          </div>
+          <p class="service-desc">
+            QVNが各国の国内企業として事業運営の請負をします<br />
+            計画・設計から実装・運営まで一貫サポートクライアントはライセンス管理と品質管理に集中でき迅速な市場展開が可能です
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">II</div>
+          <div class="service-name">
+            人材紹介事業<br /><span class="service-name-en"
+              >Human Resource Agency</span
+            >
+          </div>
+          <p class="service-desc">
+            日本企業へのグローバル人材供給、ベトナム人材の日本派遣、日本人スペシャリストのベトナム企業への派遣、双方向に国際ビジネスリーダーの育成をします
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">III</div>
+          <div class="service-name">
+            その他事業<br /><span class="service-name-en"
+              >Other Businesses</span
+            >
+          </div>
+          <p class="service-desc">
+            その他、Memoleadを通じてホテル・婚礼・葬祭・F&Bのオペレーションを受託してまいります。水事業部門をはじめ独自事業も開発予定
           </p>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2026.05</div>
-        <div class="timeline-content">
-          <p>
-            QJPが日本国内にて有料職業紹介事業の許可申請
-          </p>
+    </section>
+
+    <section id="strengths">
+      <div class="section-header">
+        <span class="section-num">09</span>
+        <h2 class="section-title">QVNの強み</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="strengths-list">
+        <div class="strength-item">
+          <div class="strength-num">01</div>
+          <div class="strength-text">
+            <strong>25年の現地経験に基づく独自メソッド</strong>
+            25年の現地経験に基づく独自展開メソッドベトナム・米国・欧州における25年にわたる就業経験で蓄積した知見・ネットワーク・ビジネスチャネルを駆使した独自の海外進出支援フレームワークを保有しています
+          </div>
+        </div>
+        <div class="strength-item">
+          <div class="strength-num">02</div>
+          <div class="strength-text">
+            <strong>外資規制を回避するローカル主導モデル</strong>
+            各国の外国投資規制に左右されない、国内企業を活用したWinWinのアプローチスピードと安定性を両立した進出を実現します
+          </div>
+        </div>
+        <div class="strength-item">
+          <div class="strength-num">03</div>
+          <div class="strength-text">
+            <strong>英語を公用語とするグローバル経営体制</strong>
+            社内公用語を英語に設定し全マネージャーに海外での学習・就業経験を要件化グローバルパートナーとのコミュニケーションバリアを排除しています幹部の大半は日本語話者のトライリンガル
+          </div>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2026.09</div>
-        <div class="timeline-content">
-          <p>
-            Ushiyoshi Nguu Cat ２号店 ホーチミン市５区に開業
-          </p>
+    </section>
+
+    <section id="contact" class="dark-section contact-section">
+      <p class="contact-tagline">"あなたのビジネスを、次の市場へ"</p>
+      <h2 class="contact-title">お問い合わせ</h2>
+
+      <p class="contact-description">
+        お客様のご相談・ご質問をお待ちしております。
+      </p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">お名前 <span>*</span></label>
+          <input id="name" type="text" name="name" required />
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2026.09</div>
-        <div class="timeline-content">
-          <p>
-            ホーチミン市１区の<a href="https://ilcorda.com/" target="_blank" rel="noopener noreferrer">Il Corda</a>が参画
-          </p>
+
+        <div class="form-group">
+          <label for="company">会社名</label>
+          <input id="company" type="text" name="company" />
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2026.12</div>
-        <div class="timeline-content">
-          <p>
-            Ushiyoshi Nguu Cat 3号店 ホーチミン市に開業予定
-          </p>
+
+        <div class="form-group">
+          <label for="email">メールアドレス <span>*</span></label>
+          <input id="email" type="email" name="email" required />
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="services" class="gray-section">
-    <div class="section-header">
-      <span class="section-num">05</span>
-      <h2 class="section-title">事業内容</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">I</div>
-        <div class="service-name">
-          オペレーション事業<br /><span class="service-name-en">Operation Division</span>
+        <div class="form-group">
+          <label for="phone">電話番号</label>
+          <input id="phone" type="text" name="phone" />
         </div>
-        <p class="service-desc">
-          QVNが各国の国内企業として事業運営の請負をします<br>
-          計画・設計から実装・運営まで一貫サポートクライアントはライセンス管理と品質管理に集中でき迅速な市場展開が可能です
-        </p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">II</div>
-        <div class="service-name">
-          人材紹介事業<br /><span class="service-name-en">Human Resource Agency</span>
+
+        <div class="form-group">
+          <label for="message">お問い合わせ内容 <span>*</span></label>
+          <textarea id="message" name="message" rows="6" required></textarea>
         </div>
-        <p class="service-desc">
-          日本企業へのグローバル人材供給、ベトナム人材の日本派遣、日本人スペシャリストのベトナム企業への派遣、双方向に国際ビジネスリーダーの育成をします
-        </p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">III</div>
-        <div class="service-name">
-          その他事業<br /><span class="service-name-en">Other Businesses</span>
-        </div>
-        <p class="service-desc">
-          その他、Memoleadを通じてホテル・婚礼・葬祭・F&Bのオペレーションを受託してまいります。水事業部門をはじめ独自事業も開発予定
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section id="strengths">
-    <div class="section-header">
-      <span class="section-num">09</span>
-      <h2 class="section-title">QVNの強み</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="strengths-list">
-      <div class="strength-item">
-        <div class="strength-num">01</div>
-        <div class="strength-text">
-          <strong>25年の現地経験に基づく独自メソッド</strong>
-          25年の現地経験に基づく独自展開メソッドベトナム・米国・欧州における25年にわたる就業経験で蓄積した知見・ネットワーク・ビジネスチャネルを駆使した独自の海外進出支援フレームワークを保有しています
-        </div>
-      </div>
-      <div class="strength-item">
-        <div class="strength-num">02</div>
-        <div class="strength-text">
-          <strong>外資規制を回避するローカル主導モデル</strong>
-          各国の外国投資規制に左右されない、国内企業を活用したWinWinのアプローチスピードと安定性を両立した進出を実現します
-        </div>
-      </div>
-      <div class="strength-item">
-        <div class="strength-num">03</div>
-        <div class="strength-text">
-          <strong>英語を公用語とするグローバル経営体制</strong>
-          社内公用語を英語に設定し全マネージャーに海外での学習・就業経験を要件化グローバルパートナーとのコミュニケーションバリアを排除しています幹部の大半は日本語話者のトライリンガル
-        </div>
-      </div>
-    </div>
-  </section>
+        <input type="hidden" name="language" value="ja" />
 
-  <section id="contact" class="dark-section contact-section">
-    <p class="contact-tagline">"あなたのビジネスを、次の市場へ。"</p>
-    <h2 class="contact-title">お問い合わせ</h2>
+        <button type="submit" class="btn-send">送信する</button>
+      </form>
 
-    <p class="contact-description">
-      お客様のご相談・ご質問をお待ちしております。
-    </p>
+      <div id="successMessage"></div>
+      <p class="contact-langs">
+        日本語 · English · Tiếng Việt &nbsp;にて承ります
+      </p>
+    </section>
 
-    <form id="contactForm">
-      <div class="form-group">
-        <label for="name">お名前 <span>*</span></label>
-        <input id="name" type="text" name="name" required />
-      </div>
+    <footer>
+      <span>© 2025 QUT Vietnam JSC. All rights reserved.</span>
+      <span
+        >120bis Nguyen Dinh Chieu, District 1, Ho Chi Minh City, Vietnam</span
+      >
+      <a href="company.html">会社概要</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </footer>
 
-      <div class="form-group">
-        <label for="company">会社名</label>
-        <input id="company" type="text" name="company" />
-      </div>
+    <script>
+      const items = document.querySelectorAll(".timeline-item");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, i) => {
+            if (e.isIntersecting)
+              setTimeout(() => e.target.classList.add("visible"), i * 100);
+          });
+        },
+        { threshold: 0.1 },
+      );
+      items.forEach((el) => observer.observe(el));
+    </script>
 
-      <div class="form-group">
-        <label for="email">メールアドレス <span>*</span></label>
-        <input id="email" type="email" name="email" required />
-      </div>
+    <script>
+      fetch("/components/nav-ja.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
 
-      <div class="form-group">
-        <label for="phone">電話番号</label>
-        <input id="phone" type="text" name="phone" />
-      </div>
-
-      <div class="form-group">
-        <label for="message">お問い合わせ内容 <span>*</span></label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-      </div>
-
-      <input type="hidden" name="language" value="ja" />
-
-      <button type="submit" class="btn-send">送信する</button>
-    </form>
-
-    <div id="successMessage"></div>
-    <p class="contact-langs">
-      日本語 · English · Tiếng Việt &nbsp;にて承ります
-    </p>
-  </section>
-
-  <footer>
-    <span>© 2025 QUT Vietnam JSC. All rights reserved.</span>
-    <span>120bis Nguyen Dinh Chieu, District 1, Ho Chi Minh City, Vietnam</span>
-    <a href="company.html">会社概要</a>
-    <a href="privacy.html">プライバシーポリシー</a>
-  </footer>
-
-  <script>
-    const items = document.querySelectorAll(".timeline-item");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e, i) => {
-          if (e.isIntersecting)
-            setTimeout(() => e.target.classList.add("visible"), i * 100);
+          // Khởi tạo menu sau khi load
+          initMenu();
         });
-      },
-      { threshold: 0.1 },
-    );
-    items.forEach((el) => observer.observe(el));
-  </script>
+    </script>
 
-  <script>
-    fetch("/components/nav-ja.html")
-      .then((res) => res.text())
-      .then((data) => {
-        document.getElementById("navbar").innerHTML = data;
-
-        // Khởi tạo menu sau khi load
-        initMenu();
-      });
-  </script>
-
-  <script type="text/javascript" src="/js/script.js"></script>
-  <script type="text/javascript" src="/js/cookie.js"></script>
-</body>
-
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/cookie.js"></script>
+  </body>
 </html>

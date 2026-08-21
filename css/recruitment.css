@@ -406,6 +406,7 @@
 
   .career-intro-text {
     padding-top: 0;
+    grid-column: span 2;
   }
 
   .career-values {
