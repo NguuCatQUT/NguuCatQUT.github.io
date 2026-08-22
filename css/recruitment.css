@@ -298,8 +298,9 @@
 .career-philosophy {
   padding: 10rem 5rem;
 
-  background: var(--black);
-  color: var(--white);
+  background: rgb(240, 239, 230);
+
+  color: var(--gray-dark);
 
   text-align: center;
 }

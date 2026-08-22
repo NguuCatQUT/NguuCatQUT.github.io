@@ -33,7 +33,7 @@
   margin-top: 5rem;
   grid-template-columns: 1.4fr 0.6fr;
   gap: 8rem;
-  align-items: end;
+  align-items:center;
 }
 
 .job-eyebrow {
@@ -58,6 +58,7 @@
 
 .job-header-meta {
   border-top: 1px solid var(--gray-mid);
+  
 }
 
 .job-meta-row {
@@ -318,9 +319,9 @@
 ===================================================== */
 
 .application-section {
-  background: var(--black);
-  color: var(--white);
-  padding: 10rem 10vw;
+  background: rgb(240, 239, 230);
+  color: var(--gray-dark);
+  padding: 5rem 5vw;
   text-align: center;
 }
 
@@ -387,7 +388,7 @@
   align-items: baseline;
   gap: 30px;
   padding-bottom: 18px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .contact-label {
