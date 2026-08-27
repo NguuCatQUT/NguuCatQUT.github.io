@@ -888,10 +888,10 @@ nav {
 
   .nav-links {
     position: fixed;
-    top: 74px;
+    top: 55px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 74px);
+    height: calc(100vh - 55px);
 
     background: rgba(250, 250, 250, 0.98);
     backdrop-filter: blur(12px);
@@ -901,6 +901,7 @@ nav {
     align-items: center;
 
     padding-top: 4rem;
+    padding-left: 0;
     gap: 2rem;
 
     transform: translateY(-120%);
